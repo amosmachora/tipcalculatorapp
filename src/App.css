@@ -1,0 +1,173 @@
+.App {
+  width: 55%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.splitter {
+  text-align: center;
+  width: 80px;
+  word-wrap: break-word;
+  letter-spacing: 7px;
+  color: var(--darkGrayishCyan);
+  font-size: 1.2rem;
+}
+.flex__container {
+  display: flex;
+}
+.input-container {
+  width: 50%;
+}
+.input-container > * {
+  margin-bottom: 30px;
+}
+.display-container {
+  width: 50%;
+  background-color: var(--veryDarkCyan);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.components {
+  width: 100%;
+  margin-top: 50px;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+}
+.input-heading {
+  color: var(--darkGrayishCyan);
+  font-size: calc(1rem - 2px);
+}
+.tips > .flex__container {
+  flex-wrap: wrap;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.tips > .flex__container > * {
+  padding: 5px 0px;
+  width: 30%;
+  text-align: center;
+  margin: 0px 10px 10px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tips > .flex__container > *:not(:last-child) {
+  color: var(--lightGrayishCyan);
+  background-color: var(--veryDarkCyan);
+}
+.tips > .flex__container > :last-child {
+  color: var(--grayishCyan);
+  font-weight: 700;
+  cursor: text;
+}
+
+input {
+  width: 95%;
+  border: none;
+  padding: 4px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  background-color: var(--veryLightGrayishCyan);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.tips > .flex__container > .five.five-percent {
+  background-color: var(--strongCyan);
+}
+.tips > .flex__container > .ten.ten-percent {
+  background-color: var(--strongCyan);
+}
+.tips > .flex__container > .fifteen.fifteen-percent {
+  background-color: var(--strongCyan);
+}
+.tips > .flex__container > .twenty-five.twenty-five-percent {
+  background-color: var(--strongCyan);
+}
+.tips > .flex__container > .fifty.fifty-percent {
+  background-color: var(--strongCyan);
+}
+
+.display-container .flex__container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.display-container .flex__container:first-of-type {
+  margin-bottom: 30px;
+}
+
+.tip__amount {
+  color: var(--white);
+  font-size: calc(1rem - 2px);
+}
+.display-container .flex__container > div p:last-child {
+  font-size: calc(1rem - 4px);
+  color: var(--grayishCyan);
+  margin-top: 5px;
+}
+.tip__amount-value {
+  font-size: 2.5rem;
+  color: var(--strongCyan);
+  text-align: right;
+}
+.reset-button {
+  color: var(--veryDarkCyan);
+  background-color: var(--strongCyan);
+  text-align: center;
+  bottom: 20px;
+  width: 90%;
+  padding: 5px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 40px auto -60px auto;
+}
+
+@media screen and (max-width: 1150px) {
+  .App {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .components {
+    flex-direction: column;
+  }
+  .input-container {
+    width: 100%;
+  }
+  .display-container {
+    width: 100%;
+    padding: 15px;
+  }
+  .tips > .flex__container > * {
+    width: 40%;
+  }
+  .tips > .flex__container {
+    justify-content: center;
+  }
+  .reset-button {
+    margin: 40px auto -10px auto;
+  }
+  .components {
+    padding: 20px;
+  }
+  .tip__amount-value {
+    font-size: 2rem;
+  }
+}
